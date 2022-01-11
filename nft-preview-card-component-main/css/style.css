@@ -2,6 +2,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 body{
     background-color: hsl(217, 54%, 11%);
@@ -10,11 +11,20 @@ body{
     color: hsl(0, 0%, 100%);
     padding: 50px;
 }
+
 p{
     font-weight: 600;
     color: hsl(215, 54%, 70%);
 }
+a{
+    text-decoration: none;
+    color:#fff;
+}
+a:hover{
+    color: hsl(178, 100%, 50%);
+}
 .card{
+    position: relative;
     margin: auto;
     text-align: center;
     background-color: hsl(216, 50%, 16%);
@@ -26,6 +36,29 @@ p{
     margin-top: 30px;
     width: 90%;
     border-radius: 15px;
+}
+.view-src{
+    width: 412px;
+    height: 415px;
+    border-radius: 15px;
+    top: 30px;
+    left: 24px;
+    position: absolute;
+}
+.view-src:hover{
+    background-color: hsla(178, 100%, 50%, 0.418);
+    
+}
+.img-src{
+    padding-top: 185px;
+    padding-bottom: 185px;
+    padding-left: 180px;
+    padding-right: 180px;
+    opacity: 0;
+    overflow: hidden;
+}
+.img-src:hover{
+    opacity: 1;
 }
 .info{
     margin: 30px;
@@ -47,7 +80,7 @@ p{
 .title{
     font-size: 18px;
     text-align: left;
-    margin: 30px;
+    margin: 15px;
 }
 .description{
     text-align: left;
@@ -61,6 +94,7 @@ hr{
     width: 85%;
     margin: auto;
     text-align: left;
+    color: hsl(215, 54%, 70%);
     margin-top: 25px;
 }
 .avatar{
@@ -68,6 +102,4 @@ hr{
     border-style: ridge;
     border-radius: 50%;
     vertical-align: middle;
-}
-@media (max-width: 375px){
 }
